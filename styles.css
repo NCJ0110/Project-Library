@@ -1,0 +1,175 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffefd4;
+  height: 100vh;
+  font-family: monospace;
+}
+
+.library-header {
+  height: 100px;
+  width: 100%;
+  background-color: #fff8ed;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 1px 20px 0.5px black;
+}
+
+.library-header h1 {
+  padding-left: 30px;
+  font-size: 50px;
+}
+
+.library {
+  min-width: 830px;
+  max-width: 830px;
+  height: 100vh;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+
+  align-content: flex-start;
+  flex-wrap: wrap;
+  border-radius: 3px;
+  overflow: scroll;
+  margin-top: 25px;
+}
+
+.open-form-modal {
+  width: 250px;
+  height: 200px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 1px 3px 5px 0.05px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  user-select: none;
+}
+
+.card {
+  width: 250px;
+  height: 200px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 1px 3px 5px 0.05px;
+  border-radius: 3px;
+  padding: 20px;
+}
+
+.card h1 {
+  margin-bottom: 5px;
+}
+
+.card p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.card .delete-btn {
+  padding: 10px;
+  border: 1px solid rgb(142, 142, 142);
+  border-radius: 3px;
+}
+
+.card .has-not-read {
+  margin-left: 20px;
+  padding: 10px;
+  width: 90px;
+  background-color: rgb(255, 129, 129);
+  border: 1px solid rgb(142, 142, 142);
+  border-radius: 3px;
+}
+
+.card .has-read {
+  margin-left: 20px;
+  padding: 10px;
+  width: 90px;
+  background-color: rgb(139, 255, 139);
+  border: 1px solid rgb(142, 142, 142);
+  border-radius: 3px;
+}
+
+.form-modal {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  pointer-events: auto;
+}
+
+.add-book-form {
+  display: flex;
+  margin: 0 auto;
+  transform: translate(0%, 50%);
+  background-color: rgb(255, 255, 255);
+  width: 350px;
+  height: 500px;
+  border: 3px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.add-book-form .close-modal {
+  align-self: flex-end;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  width: 80%;
+}
+
+.form-input input {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.form-input label {
+  margin-bottom: 10px;
+  letter-spacing: 0.2rem;
+}
+
+.form-input button {
+  padding: 10px;
+  width: 200px;
+  margin: 0 auto;
+  background-color: #fff8ed;
+  border: 1px solid rgb(142, 141, 141);
+  border-radius: 3px;
+  margin-top: 50px;
+}
+
+.delete-btn {
+  background-color: pink;
+}
+
+@media screen and (max-width: 869px) {
+  .library {
+    justify-content: center;
+    min-width: 415px;
+  }
+}
